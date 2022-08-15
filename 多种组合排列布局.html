@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            display: grid;
+            grid-template-areas: 
+            "a1 a1 a2"
+            "a3 a4 a5";
+            gap: 5px;
+        }
+
+        .main div {
+            background: #ccc;
+        }
+
+        .main div:nth-of-type(1) {
+            grid-area: a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

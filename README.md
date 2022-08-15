@@ -56,8 +56,27 @@ grid-auto-flow，grid-auto-rows,grid-auto-columns
 ## grid子项
 justify-self,align-self,place-self,grid-row,grid-column, grid-area,grid-column-start,grid-column-end,grid-row-start,grid-row-end
 
+
+## 基于线的元素放置
+
 ## grid-column-start,grid-column-end,grid-row-start,grid-row-end
 表示grid子项所占据的区域的起始和终止位置，包括水平方向和垂直方向
+
+## grid-row grid-column 基于线对应位置的缩写方式，通过 / 作为分割
+grid-column : 2 / 3  grid-row: 2 / 3
+
+## grid-area 缩写
+grid-row-start,grid-column-start,grid-row-end以及grid-column-end属性的缩写，以及额外支持grid-template-areas设置的网络名称
+
+## 子项的对齐方式 （justify-start, align-self, place-self）
+跟place-item用法相同，只不过是操作指定的子项
+
+## repeat()与minmax（）
+repeat()方法及auto-fill可选值，指定可重复的数值
+repeat 列或者行重复
+auto-fill 自动产生网格的个数
+
+minmax（）方法，设置最小值和最大值的范围
 
 
 

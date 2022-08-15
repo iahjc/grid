@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>比定位更方便的叠加布局</title>
+    <style>
+        .main {
+            width: 530px;
+            height: 300px;
+            display: grid;
+            background-color: aquamarine;
+        }
+        .main img {
+            grid-area: 1 / 1 / 1 / 1;
+        }
+
+        .main span {
+            grid-area: 1 / 1 / 1 / 1;
+            justify-self: end;
+            margin: 5px;
+        }
+
+        .main p {
+            grid-area: 1 / 1 / 1 / 1;
+            align-self: flex-end;
+            margin: 0;
+            padding: 0;
+            background: rgba(0, 0,  0, .5);
+            height: 24px;
+            color: #fff;
+            font-size: 12px;
+            line-height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./logo192.png" width="530" height="300"/>
+        <span>自制</span>
+        <p>手机热卖中。。。。。。</p>
+    </div>
+</body>
+</html>
